@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserProfileModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="My_Profile">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Img" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="My_Profile1" Relationship="Self.FK_My_Profile_My_Profile" FromRole="My_Profile" ToRole="My_Profile1" />
+    <NavigationProperty Name="My_Profile2" Relationship="Self.FK_My_Profile_My_Profile" FromRole="My_Profile1" ToRole="My_Profile" />
+  </EntityType>
+  <EntityType Name="SignUp">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="SignUp1" Relationship="Self.FK_SignUp_SignUp" FromRole="SignUp" ToRole="SignUp1" />
+    <NavigationProperty Name="SignUp2" Relationship="Self.FK_SignUp_SignUp" FromRole="SignUp1" ToRole="SignUp" />
+  </EntityType>
+  <Association Name="FK_My_Profile_My_Profile">
+    <End Role="My_Profile" Type="Self.My_Profile" Multiplicity="1" />
+    <End Role="My_Profile1" Type="Self.My_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="My_Profile">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="My_Profile1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SignUp_SignUp">
+    <End Role="SignUp" Type="Self.SignUp" Multiplicity="1" />
+    <End Role="SignUp1" Type="Self.SignUp" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SignUp">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="SignUp1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UserProfileContent2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="My_Profile" EntityType="Self.My_Profile" />
+    <EntitySet Name="SignUps" EntityType="Self.SignUp" />
+    <AssociationSet Name="FK_My_Profile_My_Profile" Association="Self.FK_My_Profile_My_Profile">
+      <End Role="My_Profile" EntitySet="My_Profile" />
+      <End Role="My_Profile1" EntitySet="My_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SignUp_SignUp" Association="Self.FK_SignUp_SignUp">
+      <End Role="SignUp" EntitySet="SignUps" />
+      <End Role="SignUp1" EntitySet="SignUps" />
+    </AssociationSet>
+    <FunctionImport Name="UserChangePassword">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="OldPassword" Mode="In" Type="String" />
+      <Parameter Name="NewPassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Usp_InsertUpdateDelete_Customer" ReturnType="Collection(String)">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Age" Mode="In" Type="Int32" />
+      <Parameter Name="Username" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="Img" Mode="In" Type="String" />
+      <Parameter Name="id" Mode="In" Type="Int32" />
+      <Parameter Name="Query" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_Profile_LazyLoad" ReturnType="Collection(UserProfileModel.usp_Profile_LazyLoad_Result)">
+      <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+      <Parameter Name="PageSize" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="uspdemo">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Age" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uspdemoprofile">
+      <Parameter Name="location" Mode="In" Type="String" />
+      <Parameter Name="designation" Mode="In" Type="String" />
+      <Parameter Name="img" Mode="In" Type="String" />
+      <Parameter Name="username" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uspMyProfile">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Age" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="Location" Mode="In" Type="String" />
+      <Parameter Name="Img" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uspSign">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Age" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="uspSignUp">
+      <Parameter Name="Name" Mode="In" Type="String" />
+      <Parameter Name="Age" Mode="In" Type="Int32" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="location" Mode="In" Type="String" />
+      <Parameter Name="Designation" Mode="In" Type="String" />
+      <Parameter Name="image" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_Profile_LazyLoad_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Age" Nullable="false" />
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Location" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Img" Nullable="true" MaxLength="500" />
+  </ComplexType>
+</Schema>

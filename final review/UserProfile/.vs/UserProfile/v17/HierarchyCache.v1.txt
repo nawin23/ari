@@ -1,0 +1,487 @@
+﻿++Solution 'UserProfile' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:UserProfile.sln
+++UserBL
+i:{00000000-0000-0000-0000-000000000000}:UserBL
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++Properties
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userbl\properties\
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\properties\
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdto\properties\
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\properties\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\properties\
+++References
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++BL.cs
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userbl\bl.cs
+++AssemblyInfo.cs
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userbl\properties\assemblyinfo.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\properties\assemblyinfo.cs
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdto\properties\assemblyinfo.cs
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\properties\assemblyinfo.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\properties\assemblyinfo.cs
+++Microsoft.CSharp
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Core
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Data
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Data.DataSetExtensions
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Net.Http
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Xml
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Xml.Linq
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++UserDAL
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{00000000-0000-0000-0000-000000000000}:UserDAL
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++UserDTO
+i:{aa2feef2-41bd-4c0f-a047-6ebba38bb509}:
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{00000000-0000-0000-0000-000000000000}:UserDTO
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++App.Config
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\app.config
+++DAL.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\dal.cs
+++Model1.edmx
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.edmx
+++Model1.Context.tt
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.context.tt
+++Model1.Context.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.context.cs
+++Model1.Designer.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.designer.cs
+++Model1.edmx.diagram
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.edmx.diagram
+++Model1.tt
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.tt
+++Model1.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\model1.cs
+++My_Profile.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\my_profile.cs
+++SignUp.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\signup.cs
+++usp_Profile_LazyLoad_Result.cs
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\usp_profile_lazyload_result.cs
+++packages.config
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdal\packages.config
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\packages.config
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\packages.config
+++EntityFramework
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++EntityFramework.SqlServer
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++Grpc.Core
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++Grpc.Core.Api
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Buffers
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.ComponentModel.DataAnnotations
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Configuration
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Memory
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Numerics
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Numerics.Vectors
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Runtime.CompilerServices.Unsafe
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Runtime.Serialization
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Security
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+++System.Web
+i:{fb41f416-3cbd-4793-9fb7-b1a94d214e75}:
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++DTO.cs
+i:{eb07dd17-74e1-4772-aa88-c76e301103ae}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userdto\dto.cs
+++UserAPI
+i:{00000000-0000-0000-0000-000000000000}:UserAPI
+++App_Data
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\app_data\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\app_data\
+++App_Start
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\app_start\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\app_start\
+++Controllers
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\controllers\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\controllers\
+++Models
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\models\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\models\
+++Global.asax
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\global.asax
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\global.asax
+++Web.config
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\web.config
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\web.config
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\web.config
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++Newtonsoft.Json
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Drawing
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.EnterpriseServices
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Net.Http.Formatting
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+++System.Web.ApplicationServices
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.DynamicData
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Entity
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Extensions
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Http
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+++System.Web.Http.WebHost
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+++System.Web.Services
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++WebApiConfig.cs
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\app_start\webapiconfig.cs
+++UserController.cs
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\controllers\usercontroller.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\controllers\usercontroller.cs
+++Global.asax.cs
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\global.asax.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\global.asax.cs
+++Web.Debug.config
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\web.debug.config
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\web.debug.config
+++Web.Release.config
+i:{e1b84ef1-af99-4f1d-9eed-d10abd7f1d8f}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\userapi\web.release.config
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\web.release.config
+++UserMVC
+i:{00000000-0000-0000-0000-000000000000}:UserMVC
+++BundleConfig.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\app_start\routeconfig.cs
+++Content
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\
+++AuthcController.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\controllers\authccontroller.cs
+++ForgotPasswordController.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\controllers\forgotpasswordcontroller.cs
+++HomeController.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\controllers\homecontroller.cs
+++Database_Access
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\database_access\
+++db.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\database_access\db.cs
+++newedit.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\database_access\newedit.cs
+++fonts
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\
+++Images
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\images\
+++demo.png
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\images\demo.png
+++Layout
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\
+++css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\css\
+++images
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\
+++-1_orig.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\-1_orig.jpg
+++about-image.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\about-image.jpg
+++blog-detail-image.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-detail-image.jpg
+++blog-header-bg.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-header-bg.jpg
+++blog-image1.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-image1.jpg
+++blog-image2.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-image2.jpg
+++blog-image3.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-image3.jpg
+++blog-image4.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\blog-image4.jpg
+++headerimg.png
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\headerimg.png
+++home-bg.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\home-bg.jpg
+++work-image1.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\work-image1.jpg
+++work-image2.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\work-image2.jpg
+++work-image3.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\work-image3.jpg
+++work-image4.jpg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\images\work-image4.jpg
+++js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\
+++bootstrap.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\bootstrap.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\bootstrap.min.js
+++custom.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\custom.js
+++jquery.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\jquery.js
+++jquery.magnific-popup.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\jquery.magnific-popup.min.js
+++jquery.stellar.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\jquery.stellar.min.js
+++smoothscroll.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\js\smoothscroll.js
+++ResetPassword.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\models\resetpassword.cs
+++UserMVC.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\models\usermvc.cs
+++Resource
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\resource\
+++Scripts
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\
+++bootstrap.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\bootstrap.js
+++jquery-3.4.1.intellisense.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery-3.4.1.slim.min.map
+++jquery.validate-vsdoc.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery.validate-vsdoc.js
+++jquery.validate.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery.validate.js
+++jquery.validate.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery.validate.min.js
+++jquery.validate.unobtrusive.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery.validate.unobtrusive.js
+++jquery.validate.unobtrusive.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\jquery.validate.unobtrusive.min.js
+++modernizr-2.8.3.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\modernizr-2.8.3.js
+++Scripts1.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\scripts\scripts1.js
+++Views
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\
+++Authc
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\
+++ForgotPassword.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\forgotpassword.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\forgotpassword\forgotpassword.cshtml
+++IndexPage.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\indexpage.cshtml
+++LoginDetails.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\logindetails.cshtml
+++ResetPassword.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\resetpassword.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\forgotpassword\resetpassword.cshtml
+++Signup.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\signup.cshtml
+++VerifyAccount.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\authc\verifyaccount.cshtml
+++Det
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\det\
+++ForgotPassword
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\forgotpassword\
+++Home
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\home\
+++Shared
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\
+++_details.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\_details.cshtml
+++_Layout.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\_layout.cshtml
+++_Lazyloading.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\_lazyloading.cshtml
+++_Login.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\_login.cshtml
+++_NewLayout.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\_newlayout.cshtml
+++Error.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\shared\error.cshtml
+++User
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\
+++DashBoard.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\dashboard.cshtml
+++Details.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\details.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\det\details.cshtml
+++Edit.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\edit.cshtml
+++FetchProfile.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\fetchprofile.cshtml
+++IndexProfile.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\indexprofile.cshtml
+++MyProfile.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\myprofile.cshtml
+++Success.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\success.cshtml
+++table_row.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\table_row.cshtml
+++Welcome.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\user\welcome.cshtml
+++_ViewStart.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\_viewstart.cshtml
+++Crypto.cs
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\crypto.cs
+++favicon.ico
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\favicon.ico
+++Antlr3.Runtime
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++Microsoft.Web.Infrastructure
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Net.Http.WebRequest
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Abstractions
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Helpers
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Mvc
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Optimization
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Razor
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.Routing
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.WebPages
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.WebPages.Deployment
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++System.Web.WebPages.Razor
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++WebGrease
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:
+++bootstrap-theme.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap-theme.min.css.map
+++bootstrap.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap.css
+++bootstrap.css.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap.css.map
+++bootstrap.min.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap.min.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\css\bootstrap.min.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\resource\bootstrap.min.css
+++bootstrap.min.css.map
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\bootstrap.min.css.map
+++Site.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\content\site.css
+++glyphicons-halflings-regular.eot
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\fonts\glyphicons-halflings-regular.woff2
+++font-awesome.min.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\css\font-awesome.min.css
+++magnific-popup.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\css\magnific-popup.css
+++templatemo-style.css
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\css\templatemo-style.css
+++fontawesome-webfont.eot
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome-webfont.eot
+++fontawesome-webfont.svg
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome-webfont.svg
+++fontawesome-webfont.ttf
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome-webfont.ttf
+++fontawesome-webfont.woff
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome-webfont.woff
+++fontawesome-webfont.woff2
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome-webfont.woff2
+++FontAwesome.otf
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\layout\fonts\fontawesome.otf
+++ajax-loader.gif
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\resource\ajax-loader.gif
+++jquery-1.7.1.min.js
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\resource\jquery-1.7.1.min.js
+++About.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\home\about.cshtml
+++Contact.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\home\contact.cshtml
+++Index.cshtml
+i:{de1c2dcc-add3-4fb5-9ca8-81c20f9f44fa}:e:\new infinite\infinite\infinite scroll\recode the shadow\userprofile\usermvc\views\home\index.cshtml

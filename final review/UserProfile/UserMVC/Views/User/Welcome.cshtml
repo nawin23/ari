@@ -1,0 +1,113 @@
+﻿@model UserMVC.Models.MyProfileModelDTO
+
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Shared/_Lazyloading1.cshtml";
+
+}
+
+@if (Session["UserName"] != null)
+{
+
+   
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>MyProfile</title>
+     
+        <script src="~/Scripts/Scripts1.js"></script>
+    </head>
+    <body>
+        @using (Html.BeginForm("Welcome", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.Img)
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => Html.ViewData["Name"], new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Age, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => Html.ViewData["Age"], new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => Session["UserName"], new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Designation, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Designation, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Designation, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Location, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Save Profile" class="btn btn-danger" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            @*@Html.LabelFor(model => model.Img, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                            <div class="col-md-10" style="margin-right:20px;">
+                                <img src=@Html.ViewData["Image"] style="margin:10px" height="200" width="200" id="imagePreview" />
+                                <div style="margin-left:150px;">
+                                    <input type="file" name="ImageUpload" accept="image/jpeg, image/png" onchange="ShowImagePreview(this,document.getElementById('imagePreview'))" />
+                                </div>
+                                
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Change your Password" onclick="location.href='@Url.Action("UpdatePassword", "User")'" class="btn btn-primary" style="margin-top:40px;" />
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        }
+    </body>
+</html>
+    @*@section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+           <script src="~/Scripts/Scripts1.js"></script>
+        }*@
+
+
+
+
+    }
+

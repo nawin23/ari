@@ -1,0 +1,109 @@
+﻿@model UserMVC.Models.MyProfileModelDTO
+
+@{
+    ViewBag.Title = "View Profile";
+    Layout = "~/Views/Shared/_details.cshtml";
+}
+
+@*<h3 style="margin-right:800px;">View Profile</h3>
+<br />*@
+
+<div>
+    <link rel="stylesheet" href="~/Layout/change/style.css">
+    <div class="wthree_tab_content">
+        <img src="@Url.Content(Model.Img)" alt=" " class="img" />
+        <div class="wthree_tab_content_pos1">
+
+        </div>
+        <div class="wthree_tab_content_pos">
+            <div class="wthree_tab_content_pos_grid">
+
+                <h3> @Html.DisplayFor(model => model.Name)</h3>
+
+                <ul class="address">
+                    <li>
+                        <ul class="address-text">
+                            <li><b>Age</b></li>
+                            <li>@Html.DisplayFor(model => model.Age)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>UserName</b></li>
+                            <li> @Html.DisplayFor(model => model.UserName)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>Designation</b></li>
+                            <li>@Html.DisplayFor(model => model.Designation)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>Location</b></li>
+                            <li>@Html.DisplayFor(model => model.Location)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- //home -->
+    @*<dl class="dl-horizontal" style="text-align:left; padding:100px; ">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Designation)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Designation)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Location)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Location)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Img)
+            </dt>
+
+            <dd>
+
+                <div class="col-md-10">
+                    <img src="@Url.Content(Model.Img)" style="margin:10px" height="200" width="200" />
+
+                </div>
+            </dd>
+
+
+
+        </dl>*@
+</div>

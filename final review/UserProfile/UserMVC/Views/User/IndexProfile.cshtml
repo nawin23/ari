@@ -1,0 +1,104 @@
+﻿
+
+@{
+    Layout = "~/Views/Shared/_Lazyloading.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Resource/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Resource/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    @*Customer Name:<input id="txtCustomerName" type="text" />*@
+    <br />
+    <br />
+    <div id="tblbody">
+        <table class="table table-responsive  table-bordered" id="tbldata">
+            <thead>
+                <tr style="color:white">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>UserName</th>
+                    <th>Designation</th>
+                    <th>Location</th>
+                    <th>Img</th>
+
+                </tr>
+            </thead>
+            <tbody id="trow">
+                @{
+                    Html.RenderAction("table_row", "User", new { Model = Model });
+                }
+            </tbody>
+        </table>
+        <div id="loadingdiv" style="text-align:center;display:none;margin-bottom:20px;">
+            <img src="~/Resource/ajax-loader.gif" />
+        </div>
+    </div>
+    <script>
+        var pageindex = 2;
+        var NoMoredata = false;
+        var inProgress = false;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > Number($("#tblrow").height()) / 2 && !NoMoredata && !inProgress) {
+
+                inProgress = true;
+                $("#loadingdiv").show();
+                $.post("@Url.Action("InfiniteScroll","User")", { "pageindex": pageindex },
+                    function (data) {
+                        pageindex = pageindex + 1;
+                        NoMoredata = data.NoMoredata;
+                        $("#trow").append(data.HTMLString);
+                        $("#loadingdiv").hide();
+                        inProgress = false;
+                    }
+                    );
+            }
+        });
+    </script>
+    @*<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            GetCustomers();
+            $("#txtCustomerName").keyup(function () {
+                GetCustomers();
+            });
+        });
+        function GetCustomers() {
+            var customerName = $.trim($("#txtCustomerName").val());
+            $.ajax({
+                type: "POST",
+                url: "/User/SearchCustomers",
+                data: "{customerName:'" + customerName + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (customers) {
+                    var table = $("#tbldata");
+                    table.find("tr:not(:first)").remove();
+                    $.each(customers, function (i, customer) {
+                        var table = $("#tbldata");
+                        var row = table[0].insertRow(-1);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(0).html(customer.Name);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(1).html(customer.);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(2).html(customer.);
+                        $(row).append("<td />");
+                        $(row).find("td").eq(3).html(customer.);
+                    });
+                }
+            });
+        }
+    </script>*@
+</body>
+</html>
+

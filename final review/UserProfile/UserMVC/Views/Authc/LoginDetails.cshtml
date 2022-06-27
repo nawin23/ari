@@ -1,0 +1,58 @@
+﻿@model UserMVC.Models.MyProfileModelDTO
+
+@{
+    ViewBag.Title = "Login ";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+
+    <div class="form-horizontal" style="padding: 5%; padding-right: 20%">
+
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control form-control-lg" } })
+                @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="text-danger" style="margin-left:50px; margin-bottom:10px;" >
+            @ViewBag.Message
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div style="margin-right:90px;">
+    <label style="margin-left:80px; margin-bottom:400px;">Don't have a Account</label>
+    @Html.ActionLink("Create one", "Signup")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

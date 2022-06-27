@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UserProfileModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="My_Profile">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Designation" Type="varchar" MaxLength="50" />
+          <Property Name="Location" Type="varchar" MaxLength="50" />
+          <Property Name="Img" Type="varchar" MaxLength="500" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SignUp">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Age" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_My_Profile_My_Profile">
+          <End Role="My_Profile" Type="Self.My_Profile" Multiplicity="1" />
+          <End Role="My_Profile1" Type="Self.My_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="My_Profile">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="My_Profile1">
+              <PropertyRef Name="Name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignUp_SignUp">
+          <End Role="SignUp" Type="Self.SignUp" Multiplicity="1" />
+          <End Role="SignUp1" Type="Self.SignUp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="SignUp">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="SignUp1">
+              <PropertyRef Name="Name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="UserChangePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="OldPassword" Type="varchar" Mode="In" />
+          <Parameter Name="NewPassword" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="Usp_InsertUpdateDelete_Customer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="Username" Type="varchar" Mode="In" />
+          <Parameter Name="Designation" Type="varchar" Mode="In" />
+          <Parameter Name="Location" Type="varchar" Mode="In" />
+          <Parameter Name="Img" Type="varchar" Mode="In" />
+          <Parameter Name="id" Type="int" Mode="In" />
+          <Parameter Name="Query" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_Profile_LazyLoad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PageIndex" Type="int" Mode="In" />
+          <Parameter Name="PageSize" Type="int" Mode="In" />
+        </Function>
+        <Function Name="uspdemo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uspdemoprofile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="location" Type="varchar" Mode="In" />
+          <Parameter Name="designation" Type="varchar" Mode="In" />
+          <Parameter Name="img" Type="varchar" Mode="In" />
+          <Parameter Name="username" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uspMyProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Designation" Type="varchar" Mode="In" />
+          <Parameter Name="Location" Type="varchar" Mode="In" />
+          <Parameter Name="Img" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uspSign" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="uspSignUp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="location" Type="varchar" Mode="In" />
+          <Parameter Name="Designation" Type="varchar" Mode="In" />
+          <Parameter Name="image" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="UserProfileModelStoreContainer">
+          <EntitySet Name="My_Profile" EntityType="Self.My_Profile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SignUp" EntityType="Self.SignUp" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_My_Profile_My_Profile" Association="Self.FK_My_Profile_My_Profile">
+            <End Role="My_Profile" EntitySet="My_Profile" />
+            <End Role="My_Profile1" EntitySet="My_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignUp_SignUp" Association="Self.FK_SignUp_SignUp">
+            <End Role="SignUp" EntitySet="SignUp" />
+            <End Role="SignUp1" EntitySet="SignUp" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UserProfileModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="My_Profile">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Designation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Img" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="My_Profile1" Relationship="Self.FK_My_Profile_My_Profile" FromRole="My_Profile" ToRole="My_Profile1" />
+          <NavigationProperty Name="My_Profile2" Relationship="Self.FK_My_Profile_My_Profile" FromRole="My_Profile1" ToRole="My_Profile" />
+        </EntityType>
+        <EntityType Name="SignUp">
+          <Key>
+            <PropertyRef Name="Name" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Age" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="SignUp1" Relationship="Self.FK_SignUp_SignUp" FromRole="SignUp" ToRole="SignUp1" />
+          <NavigationProperty Name="SignUp2" Relationship="Self.FK_SignUp_SignUp" FromRole="SignUp1" ToRole="SignUp" />
+        </EntityType>
+        <Association Name="FK_My_Profile_My_Profile">
+          <End Role="My_Profile" Type="Self.My_Profile" Multiplicity="1" />
+          <End Role="My_Profile1" Type="Self.My_Profile" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="My_Profile">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="My_Profile1">
+              <PropertyRef Name="Name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SignUp_SignUp">
+          <End Role="SignUp" Type="Self.SignUp" Multiplicity="1" />
+          <End Role="SignUp1" Type="Self.SignUp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="SignUp">
+              <PropertyRef Name="Name" />
+            </Principal>
+            <Dependent Role="SignUp1">
+              <PropertyRef Name="Name" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="UserProfileContent2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="My_Profile" EntityType="Self.My_Profile" />
+          <EntitySet Name="SignUps" EntityType="Self.SignUp" />
+          <AssociationSet Name="FK_My_Profile_My_Profile" Association="Self.FK_My_Profile_My_Profile">
+            <End Role="My_Profile" EntitySet="My_Profile" />
+            <End Role="My_Profile1" EntitySet="My_Profile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SignUp_SignUp" Association="Self.FK_SignUp_SignUp">
+            <End Role="SignUp" EntitySet="SignUps" />
+            <End Role="SignUp1" EntitySet="SignUps" />
+          </AssociationSet>
+          <FunctionImport Name="UserChangePassword">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="OldPassword" Mode="In" Type="String" />
+            <Parameter Name="NewPassword" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="Usp_InsertUpdateDelete_Customer" ReturnType="Collection(String)">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="Username" Mode="In" Type="String" />
+            <Parameter Name="Designation" Mode="In" Type="String" />
+            <Parameter Name="Location" Mode="In" Type="String" />
+            <Parameter Name="Img" Mode="In" Type="String" />
+            <Parameter Name="id" Mode="In" Type="Int32" />
+            <Parameter Name="Query" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="usp_Profile_LazyLoad" ReturnType="Collection(UserProfileModel.usp_Profile_LazyLoad_Result)">
+            <Parameter Name="PageIndex" Mode="In" Type="Int32" />
+            <Parameter Name="PageSize" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="uspdemo">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspdemoprofile">
+            <Parameter Name="location" Mode="In" Type="String" />
+            <Parameter Name="designation" Mode="In" Type="String" />
+            <Parameter Name="img" Mode="In" Type="String" />
+            <Parameter Name="username" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspMyProfile">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Designation" Mode="In" Type="String" />
+            <Parameter Name="Location" Mode="In" Type="String" />
+            <Parameter Name="Img" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspSign">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="uspSignUp">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="location" Mode="In" Type="String" />
+            <Parameter Name="Designation" Mode="In" Type="String" />
+            <Parameter Name="image" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="usp_Profile_LazyLoad_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="Age" Nullable="false" />
+          <Property Type="String" Name="Username" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Designation" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Location" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Img" Nullable="true" MaxLength="500" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UserProfileModelStoreContainer" CdmEntityContainer="UserProfileContent2">
+          <EntitySetMapping Name="My_Profile">
+            <EntityTypeMapping TypeName="UserProfileModel.My_Profile">
+              <MappingFragment StoreEntitySet="My_Profile">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Img" ColumnName="Img" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SignUps">
+            <EntityTypeMapping TypeName="UserProfileModel.SignUp">
+              <MappingFragment StoreEntitySet="SignUp">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="UserChangePassword" FunctionName="UserProfileModel.Store.UserChangePassword" />
+          <FunctionImportMapping FunctionImportName="Usp_InsertUpdateDelete_Customer" FunctionName="UserProfileModel.Store.Usp_InsertUpdateDelete_Customer" />
+          <FunctionImportMapping FunctionImportName="usp_Profile_LazyLoad" FunctionName="UserProfileModel.Store.usp_Profile_LazyLoad">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="UserProfileModel.usp_Profile_LazyLoad_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Img" ColumnName="Img" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="uspdemo" FunctionName="UserProfileModel.Store.uspdemo" />
+          <FunctionImportMapping FunctionImportName="uspdemoprofile" FunctionName="UserProfileModel.Store.uspdemoprofile" />
+          <FunctionImportMapping FunctionImportName="uspMyProfile" FunctionName="UserProfileModel.Store.uspMyProfile" />
+          <FunctionImportMapping FunctionImportName="uspSign" FunctionName="UserProfileModel.Store.uspSign" />
+          <FunctionImportMapping FunctionImportName="uspSignUp" FunctionName="UserProfileModel.Store.uspSignUp" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

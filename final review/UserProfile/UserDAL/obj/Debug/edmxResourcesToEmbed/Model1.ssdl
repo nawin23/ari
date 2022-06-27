@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UserProfileModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="My_Profile">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Designation" Type="varchar" MaxLength="50" />
+    <Property Name="Location" Type="varchar" MaxLength="50" />
+    <Property Name="Img" Type="varchar" MaxLength="500" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SignUp">
+    <Key>
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Age" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_My_Profile_My_Profile">
+    <End Role="My_Profile" Type="Self.My_Profile" Multiplicity="1" />
+    <End Role="My_Profile1" Type="Self.My_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="My_Profile">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="My_Profile1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SignUp_SignUp">
+    <End Role="SignUp" Type="Self.SignUp" Multiplicity="1" />
+    <End Role="SignUp1" Type="Self.SignUp" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="SignUp">
+        <PropertyRef Name="Name" />
+      </Principal>
+      <Dependent Role="SignUp1">
+        <PropertyRef Name="Name" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="UserChangePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="OldPassword" Type="varchar" Mode="In" />
+    <Parameter Name="NewPassword" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Usp_InsertUpdateDelete_Customer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="Username" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="Img" Type="varchar" Mode="In" />
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="Query" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_Profile_LazyLoad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PageIndex" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+  </Function>
+  <Function Name="uspdemo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspdemoprofile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="location" Type="varchar" Mode="In" />
+    <Parameter Name="designation" Type="varchar" Mode="In" />
+    <Parameter Name="img" Type="varchar" Mode="In" />
+    <Parameter Name="username" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspMyProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="Location" Type="varchar" Mode="In" />
+    <Parameter Name="Img" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspSign" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="uspSignUp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="UserName" Type="varchar" Mode="In" />
+    <Parameter Name="Password" Type="varchar" Mode="In" />
+    <Parameter Name="location" Type="varchar" Mode="In" />
+    <Parameter Name="Designation" Type="varchar" Mode="In" />
+    <Parameter Name="image" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="UserProfileModelStoreContainer">
+    <EntitySet Name="My_Profile" EntityType="Self.My_Profile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SignUp" EntityType="Self.SignUp" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_My_Profile_My_Profile" Association="Self.FK_My_Profile_My_Profile">
+      <End Role="My_Profile" EntitySet="My_Profile" />
+      <End Role="My_Profile1" EntitySet="My_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SignUp_SignUp" Association="Self.FK_SignUp_SignUp">
+      <End Role="SignUp" EntitySet="SignUp" />
+      <End Role="SignUp1" EntitySet="SignUp" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

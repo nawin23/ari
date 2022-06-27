@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>User Profile</title>
+    <!--
+    Hydro Template
+    http://www.templatemo.com/tm-509-hydro
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="~/Layout/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Layout/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Layout/css/font-awesome.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="~/Layout/css/templatemo-style.css">
+</head>
+<body>
+
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="http://localhost:53416/User/IndexProfile" class="navbar-brand">User Profile Management</a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse" style="height: auto;">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                       
+                        
+                        <li><a href="http://localhost:53416/User/Welcome" class="smoothScroll">MyProfile</a></li>
+
+
+
+                        <li style="margin-left:320px"><a>Dear - @User.Identity.Name</a></li>
+                        <li>@Html.ActionLink("Logout", "Logout", "Authc")</li>
+
+
+
+
+                    }
+                    @*else
+                        {
+                            <li>@Html.ActionLink("Login", "LoginDetails", "Authc")</li>
+                        }*@
+                </ul>
+
+                @*<ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+                    </ul>*@
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container" style="height:auto; width:40%">
+            <div class="row">
+
+
+                @RenderBody()
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="~/Layout/js/jquery.js"></script>
+    <script src="~/Layout/js/bootstrap.min.js"></script>
+    <script src="~/Layout/js/jquery.stellar.min.js"></script>
+    <script src="~/Layout/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Layout/js/smoothscroll.js"></script>
+    <script src="~/Layout/js/custom.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
